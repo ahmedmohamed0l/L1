@@ -3,7 +3,7 @@ public class StaticObj {
     PersonalInfo ObjPI = new PersonalInfo();
 
     public void Hi() {
-        System.out.println("# Hi LUCiFER x_x #");
+        System.out.println("# Hi Ahmed x_x #");
     }
 
     public void FN() {
