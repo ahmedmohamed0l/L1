@@ -69,6 +69,6 @@ public class StaticObj {
 
     public void Bye() {
         System.out.println("Goodbye it was a pleasure to meet you and have a nice day, See you later!");
-        System.out.println("Powered by LUCiFER XD");
+        System.out.println("Powered by Ahmed_0l XD");
     }
 }
