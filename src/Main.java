@@ -22,7 +22,7 @@ public class Main {
         ObjSO.Tall();
         ObjPI.setTall(ObjSc.nextInt());
 
-        
+
         ObjSO.ThxMsg();
         ObjSO.FullN(ObjPI.getFullN());
         ObjSO.SexTOut(ObjPI.getSexType());
