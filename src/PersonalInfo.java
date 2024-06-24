@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class PersonalInfo {
     Scanner ObjSc = new Scanner(System.in);
 
-//---------------------------(Privet)---------------------------
+//=========================(PRIVATE)=========================
 
     private String FN, SN, FullN, SexType;
     private int Age, Tall;
@@ -16,7 +16,7 @@ public class PersonalInfo {
     private double Tall = 1.82;
     private char Blood = 'A';*/
 
-//---------------------------(Getter)---------------------------
+//=========================(GETTER)=========================
 
     public String getFN() {
         return FN;
@@ -42,7 +42,7 @@ public class PersonalInfo {
         return Tall;
     }
 
-//---------------------------(Setter)---------------------------
+//=========================(SETTER)=========================
 
     public void setFN(String newFN) {
         this.FN = newFN;

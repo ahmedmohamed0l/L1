@@ -4,30 +4,39 @@ public class Main {
 
     public static void main(String[] args) {
 
-        StaticObj ObjSO = new StaticObj();
-        PersonalInfo ObjPI = new PersonalInfo();
         Scanner ObjSc = new Scanner(System.in);
+        PersonalInfo ObjPI = new PersonalInfo();
+        StaticObj ObjSO = new StaticObj();
+        StaticObj.Name Name = new StaticObj.Name();
+        StaticObj.Type Type = new StaticObj.Type();
+        StaticObj.Age Age = new StaticObj.Age();
+        StaticObj.Tall Tall = new StaticObj.Tall();
 
+        //=========================(INPUTS)=========================
         ObjSO.Hi();
-        ObjSO.FN();
+        //---Name---
+        Name.FN();
         ObjPI.setFN(ObjSc.nextLine());
-        ObjSO.SN();
+        Name.SN();
         ObjPI.setSN(ObjSc.nextLine());
         ObjPI.setFullN(ObjPI.getFN().concat(" ").concat(ObjPI.getSN()));
-        ObjSO.SexType();
+        //---Type---
+        Type.SexType();
         ObjPI.setSexType(ObjSc.nextLine());
-        ObjSO.Age();
+        //---Age---
+        Age.AgeQ();
         ObjPI.setAge(ObjSc.nextInt());
-        ObjSO.AgeCon();
-        ObjSO.Tall();
+        Age.AgeCon();
+        //---Tall---
+        Tall.TallQ();
         ObjPI.setTall(ObjSc.nextInt());
 
-
+        //=========================(OUTPUTS)=========================
         ObjSO.ThxMsg();
-        ObjSO.FullN(ObjPI.getFullN());
-        ObjSO.SexTOut(ObjPI.getSexType());
-        ObjSO.AgeOut(ObjPI.getAge());
-        ObjSO.TallOut(ObjPI.getTall());
+        Name.FullN(ObjPI.getFullN());
+        Type.SexTOut(ObjPI.getSexType());
+        Age.AgeOut(ObjPI.getAge());
+        Tall.TallOut(ObjPI.getTall());
         ObjSO.Bye();
 
     }
