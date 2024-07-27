@@ -64,7 +64,7 @@ public class PersonalInfo {
             } else if (newSexType.equalsIgnoreCase("m")) {
                 this.SexType = "Male";
             } else {
-                System.out.println("Wrong Answer !!, Please enter 'F' or 'M'");
+                System.err.println("Wrong Answer !!, Please enter 'F' or 'M'");
                 newSexType = ObjSc.nextLine();
             }
         } while (!newSexType.equalsIgnoreCase("f") && newSexType.equalsIgnoreCase("m"));

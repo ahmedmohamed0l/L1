@@ -13,7 +13,7 @@ public class Main {
         StaticObj.Tall Tall = new StaticObj.Tall();
 
         //=========================(INPUTS)=========================
-        ObjSO.Hi();
+        ObjSO.WelcomeMess();
         //---Name---
         Name.FN();
         ObjPI.setFN(ObjSc.nextLine());

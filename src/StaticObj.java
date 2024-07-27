@@ -1,9 +1,21 @@
-public class StaticObj {
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+interface Hi {
+    public void WelcomeMess();
+}
+
+class StaticObj implements Hi {
+
+    LocalDateTime DateObj = LocalDateTime.now();
+    DateTimeFormatter NewFormatObj = DateTimeFormatter.ofPattern("E, dd/MM/yyyy HH:mm:ss");
+    String NewDateObj = DateObj.format(NewFormatObj);
 
     PersonalInfo ObjPI = new PersonalInfo();
 
-    public void Hi() {
-        System.out.println("# Hi Ahmed x_x #");
+    public void WelcomeMess() {
+        System.out.println("# Hi Ahmed #");
+        System.out.println("This Moment is : " + NewDateObj);
     }
 
     /*public void FN() {
@@ -78,19 +90,22 @@ public class StaticObj {
         }
 
         public void AgeCon() {
-        /*if (ObjPI.getAge() >= AllowedAge) {
+        if (ObjPI.getAge() >= AllowedAge) {
             System.out.println("Oh nice! You can use this app.. Have fun <3");
         } else {
-            System.out.println("I'm so sorry but you can'nt use this app. TOT");
-        }*/
-            String AS = ((ObjPI.getAge()) >= AllowedAge) ? "Oh nice! You can use this app.. Have fun <3" : "I'm so sorry but you can'nt use this app. TOT";
-            System.out.println(AS);
+            System.err.println("I'm so sorry but you can'nt use this app. TOT");
+        }
+            /*String AS = ((ObjPI.getAge()) >= AllowedAge) ? "Oh nice! You can use this app.. Have fun <3" : "I'm so sorry but you can'nt use this app. TOT";
+            System.out.println(AS);*/
         }
 
         public void AgeOut(int age) {
             System.out.println("And you are " + age + " years old ");
-            String AS = (ObjPI.getAge() >= AllowedAge) ? "You can use this app.. Have fun <3" : "You can'nt use this app. TOT";
-            System.out.println(AS);
+            if (ObjPI.getAge() >= AllowedAge) {
+                System.out.println("Oh nice! You can use this app.. Have fun <3");
+            } else {
+                System.err.println("I'm so sorry but you can'nt use this app. TOT");
+            }
         }
 
     }
